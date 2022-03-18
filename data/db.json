@@ -1,0 +1,17 @@
+{
+    "blogs": [
+        {
+            "title": "My first blog", 
+            "body": "Some really long sentence. Some really long sentence. Some really long sentence. Some really long sentence.", 
+            "author": "Vikki",
+            "id": 1 
+        }, 
+        {
+            "title": "My second blog", 
+            "body": "Some really long sentence. Some really long sentence. Some really long sentence. Some really long sentence.", 
+            "author": "Rich",
+            "id": 2 
+        }
+        
+    ]
+}
