@@ -6,6 +6,7 @@ const Button = (props:ButtonProps) => {
     return ( 
         <button onClick={props.handleClick}>CLICK</button>
      );
+
 }
  
 export default Button ;

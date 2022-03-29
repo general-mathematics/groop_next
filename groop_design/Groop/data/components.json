@@ -1,0 +1,47 @@
+{
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2022-03-20T19:26:21.207Z",
+  "entities": [
+    {
+      "class": "component",
+      "type": "page",
+      "tags": [],
+      "id": "426c09f3-cf73-4107-911e-d8d8f0513f3a",
+      "related_entity_ids": [],
+      "snippets": {
+        "trigger": "test",
+        "languages": {
+          "typescriptreact": "interface CardProps {\n    cardDetails: {\n        title: string,\n        text: string\n    }\n}\n\nconst Card = (props:CardProps) => {\n    return ( \n        <>  \n        <h2>{props.cardDetails.title}</h2>\n        <p>{props.cardDetails.text}</p>\n        </>\n    );\n}\n \nexport default Card ;"
+        }
+      },
+      "name": "Groop-Circle",
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/7cb64ccd-c5c8-46c4-54f7-13f2df14d62e",
+        "id": "b9f80341-e266-4750-b716-060aeca9f3ac",
+        "last_sync": "2022-03-20T19:26:21.205Z",
+        "sync": true
+      },
+      "last_updated": "2022-03-20T19:34:24.436Z",
+      "last_updated_by": ""
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "tags": [],
+      "id": "0721f44e-70da-4940-8040-62c1b474080c",
+      "related_entity_ids": [],
+      "snippets": {
+        "trigger": "",
+        "languages": {}
+      },
+      "name": "Groop-Rectangle",
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/7cb64ccd-c5c8-46c4-54f7-13f2df14d62e",
+        "id": "c09ef21e-ca48-432f-b272-c9682af4f452",
+        "last_sync": "2022-03-20T19:26:21.206Z",
+        "sync": true
+      }
+    }
+  ]
+}

@@ -1,17 +1,17 @@
-type CardProps = {
-    cardDetails: {
-        title: string,
-        text: string
-    }
+interface CardProps {
+  title: string;
+  text: string;
+  counter: number;
 }
 
-const Card = (props:CardProps) => {
-    return ( 
-        <>  
-        <h2>{props.cardDetails.title}</h2>
-        <p>{props.cardDetails.text}</p>
-        </>
-    );
-}
- 
-export default Card ;
+const Card = (props: CardProps) => {
+  return (
+    <>
+      <h2>{props.title}</h2>
+      <p>{props.text}</p>
+      <p>{props.counter}</p>
+    </>
+  );
+};
+
+export default Card;

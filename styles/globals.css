@@ -1,14 +1,166 @@
-html,
-body {
-  padding: 0;
+html {
+    font-size: 16px;
+}
+
+:root {
+--ff-body:freight-text-pro,serif;
+--ff-heading:neue-haas-grotesk-display, sans-serif;
+
+--fs-xl: clamp(2rem, 12vw + 1rem, 12rem);
+--fs-600: 3rem;
+--fs-400: 1rem;
+}
+
+
+html, 
+h1,
+h2,
+h3,
+p,
+blockquote {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+}
+
+
+
+body {
+    max-width: 1080px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+    width: 80vw;
+}
+
+/* Border Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Main Container */
+.container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+/* Utility Classes */
+
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}
+
+/* Responsive text sizing */
+@media (min-width: 40em) {
+  :root {
+    --fs-600: 2rem;
+    --fs-400: 1.125rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  line-height: 1.6;
+}
+
+h1,
+blockquote {
+  font-family: var(--ff-heading);
+  font-weight: 900;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  line-height: 1;
+}
+
+h2 {
+    font-size: var(--fs-600);
+    font-size: var(--ff-heading);
+}
+
+blockquote {
+  font-size: var(--fs-600);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+a {
+  color: #444;
+  font-weight: 700;
+}
+
+a:hover {
+  color: red;
+}
+
+
+@media (min-width: 60em) {
+  article {
+    grid-template-columns: min(40%, 40rem) 1fr;
+  }
+
+  article > img {
+    grid-row: 1 / 4;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  article > *:not(img) {
+    grid-column: 1 / -1;
+  }
+}
+
+
+
+
+
 
 

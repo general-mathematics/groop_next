@@ -2,25 +2,27 @@ import { useState } from "react";
 import styles from "./Form.module.scss";
 
 function Form(){
-    const [title, setTitle] = useState(""); 
-    const [body, setBody] = useState("");
-    const [author, setAuthor] = useState("Vikki");
+    const [title, setTitle] = useState('');
+    const [body, setBody] = useState('');
+    const [author, setAuthor] = useState('');
 
+      const handleSubmit = (e:React.FormEvent<HTMLFormElement> | React.ChangeEvent<HTMLSelectElement>):void => {
+        e.preventDefault();
+        const blog = { title, body, author };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        
-    }
+        console.log(blog);
+  }
 
     return (
         <div className={styles.create}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e)=> {}}>
             <label>Blog Title:
                 <input 
                     type="text"
                     required
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
+                    name="title"
                     />
             </label>
             <label>Blog Body</label>
@@ -28,11 +30,12 @@ function Form(){
                 required
                 value={body}
                 onChange={(e) => setBody(e.target.value)}
+                name="body"
             ></textarea>
             <label>Blog Author:</label>
             <select
                 value={author}
-                onChange={(e) => setAuthor(e.target.value)}
+                onChange={(e)=>{setAuthor(e.target.value)}}
             >
                 <option value="Rich">Rich</option>
                 <option value="Vikki">Vikki</option>
