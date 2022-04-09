@@ -1,4 +1,6 @@
-const Input = (props) => {
+import { ReactChild, ReactFragment, ReactPortal } from "react";
+
+const Input = (props: { label: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined; value: string | number | readonly string[] | undefined; }) => {
     return ( 
         <label>{props.label}:
             <input 
@@ -11,3 +13,7 @@ const Input = (props) => {
 }
  
 export default Input ;
+
+function setName(value: string): void {
+    throw new Error("Function not implemented.");
+}

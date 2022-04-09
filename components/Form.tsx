@@ -7,7 +7,7 @@ function Form(){
     const [author, setAuthor] = useState("Vikki");
 
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
         
     }
