@@ -22,7 +22,13 @@ blockquote {
   padding: 0;
 }
 
+.backgroundBlue {
+    background-color: blue;
+}
 
+.backgroundDefault {
+    background-color: red;
+}
 
 body {
     max-width: 1080px; 
