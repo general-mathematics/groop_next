@@ -6,7 +6,8 @@ const Testing = () => {
     <>
       <Card
         title={"My Card Title from prop"}
-        color={styles.oCardBackgroundDefault}
+        color={styles.oCardBackgroundGreen}
+        status={"success"}
       ></Card>
     </>
   );

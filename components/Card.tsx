@@ -6,25 +6,20 @@ interface ICardProps {
   text?: string;
 
   color?: string;
+  status: "Waiting" | "success";
 }
 
-const Card: React.FC<ICardProps> = (props: ICardProps) => {
-  const { text = "John", color = "default" } = props;
-
+const Card = (
+  props: ICardProps,
+  { text = "paorrr", color = styles.oCardBackgroundDefault },
+) => {
   const cardClasses = classNames("card1", "card2");
 
   return (
     <>
-      <h2
-        className={
-          { color }
-            ? styles.oCardBackgroundDefault
-            : styles.oCardBackgroundGreen
-        }
-      >
-        {props.title}
-      </h2>
+      <h2 className={props.color}>{props.title}</h2>
       <p>{text}</p>
+      <p>{props.status}</p>
     </>
   );
 };
