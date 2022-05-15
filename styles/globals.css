@@ -30,11 +30,10 @@ blockquote {
     background-color: red;
 }
 
-body {
-    max-width: 1080px; 
+body { 
 	margin: 0 auto !important; 
 	float: none !important; 
-    width: 80vw;
+    width: 100vw;
 }
 
 /* Border Box Sizing */
