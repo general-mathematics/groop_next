@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import styles from "./Grid.module.scss";
 
 interface IGridProps {
