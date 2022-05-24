@@ -3,7 +3,7 @@ import styles from "./Grid.module.scss";
 interface IGridProps {
   children: React.ReactNode; // 👈️ type children
 }
-const Grid = (props: IGridProps) => {
+export const Grid = (props: IGridProps) => {
   return (
     <>
       <div className={styles.grid}>

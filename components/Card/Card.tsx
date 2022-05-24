@@ -2,7 +2,7 @@ import styles from "./Card.module.scss";
 
 interface ICardProps {
   /**
-   * Add a title (required)
+   * Add a title (requir
    */
 
   title: string;
@@ -14,7 +14,7 @@ interface ICardProps {
 }
 
 /**
- * This is a **card**.
+ * #Card Title
  */
 export const Card = ({
   title = "Card 1",
@@ -29,3 +29,5 @@ export const Card = ({
     </div>
   );
 };
+
+export default Card;

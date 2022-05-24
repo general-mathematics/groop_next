@@ -1,8 +1,8 @@
-import Card from "../components/Card";
+import Card from "../components/Card/Card";
 import Grid from "../components/Grid";
-import styles from "../components/Card.module.scss";
+import styles from "..Card/Card.module.scss";
 
-const Testing = () => {
+export const Testing = () => {
   return (
     <>
       <Grid>
@@ -12,6 +12,7 @@ const Testing = () => {
           color={styles.oCard}
           status={"Waiting"}
         ></Card>
+
         <Card
           title={"CARD"}
           text={"I am a card"}

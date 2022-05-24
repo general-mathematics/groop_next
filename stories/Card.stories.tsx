@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Card } from "../components/Card";
+import { Card } from "../components/Card/Card";
 
 export default {
   title: "Card",
@@ -17,4 +17,11 @@ Main.args = {
   title: "Card Title",
   text: "Hi",
   backgroundColor: "pink",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  title: "Card Title",
+  text: "Hi",
+  backgroundColor: "blue",
 };
